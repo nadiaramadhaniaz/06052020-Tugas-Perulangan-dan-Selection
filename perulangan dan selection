@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+	cout << "Nama : NADIA RAMADHANI AZZAHRO" << endl;
+	cout << "NIM : ETE10190112" << endl;
+	int angka_pertama = 12;
+	int angka_terakhir = 525;
+
+	for (int i = angka_pertama; i <= angka_terakhir; i++) {
+		int counter_prima = 0;
+		for (int j = 1 ; j <= i ; j++ ) {
+			if ( i % j == 0 ) {
+				counter_prima++;	
+			}
+		}
+		if (counter_prima == 2) {
+			cout << i << " merupakan angka prima." << endl;
+		}
+	}
+return 0;
+}
